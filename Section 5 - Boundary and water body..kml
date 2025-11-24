@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Section 5 - Boundary and water body.</name>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-FFD600-2401-77-nodesc-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>2.401</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d00d6ff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-FFD600-2401-77-nodesc-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>3.6015</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d00d6ff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-FFD600-2401-77-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-FFD600-2401-77-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-FFD600-2401-77-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Mokoyeti River</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          36.7850968,-1.3430911,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NRFA - Bomas Block.</name>
+      <styleUrl>#poly-FFD600-2401-77-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              36.7638107,-1.3218336,0
+              36.7660021,-1.3242952,0
+              36.7660356,-1.3280915,0
+              36.7663541,-1.3287669,0
+              36.766449,-1.3290791,0
+              36.7665009,-1.3295173,0
+              36.7669461,-1.3327076,0
+              36.767046,-1.3334247,0
+              36.7670628,-1.3342759,0
+              36.7670212,-1.3358335,0
+              36.7707683,-1.3357624,0
+              36.7742149,-1.3373043,0
+              36.775685,-1.3360282,0
+              36.7733636,-1.3340492,0
+              36.7730099,-1.3338954,0
+              36.7728412,-1.3337952,0
+              36.7726595,-1.3335572,0
+              36.773035,-1.331412,0
+              36.7716149,-1.3277339,0
+              36.7695818,-1.3224889,0
+              36.7715344,-1.3221028,0
+              36.7710731,-1.3186061,0
+              36.7697642,-1.3198503,0
+              36.7684982,-1.32088,0
+              36.7677042,-1.321352,0
+              36.7668245,-1.3216952,0
+              36.7656443,-1.3218239,0
+              36.7645499,-1.3218454,0
+              36.7638107,-1.3218336,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>(Proposed)Bomas Block Nursery Entrance</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          36.7756359,-1.336134,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
