@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KML Layer on Google Map</title>
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 16,
+                center: { lat: -1.3158, lng: 36.7408 }, // Example: Chicago coordinates
+            });
+
+        /*    const kmlLayer = new google.maps.KmlLayer({
+                url: "https://github.com/lordochola/Wangari-Maathai-Hackathon/blob/main/Section%205%20-%20Boundary%20and%20water%20body..kml", // Example KML URL
+                setmap: map,
+                preserveViewport: true,
+                suppressInfoWindows: false,
+            });*/
+            
+            const flightPlanCoordinates = [
+    { lat: -1.3218336, lng: 36.7638107 },
+    { lat: -1.3242952, lng: 36.7660021 },
+    { lat: -1.3280915, lng: 36.7660356 },
+    { lat: -1.3287669, lng: 36.7663541 },
+                
+                
+    { lat: -1.3290791, lng: 36.766449 },
+    { lat: -1.3295173, lng: 36.7665009 },
+    { lat: -1.3327076, lng: 36.7669461 },
+    { lat: -1.3334247, lng: 36.767046 },
+    { lat: -1.3342759, lng: 36.7670628 },
+    { lat: -1.3358335, lng: 36.7670212 },
+    { lat: -1.3357624, lng: 36.7707683 },
+    { lat: -1.3373043, lng: 36.7742149 }, 
+    { lat: -1.3360282, lng: 36.775685 },
+    { lat: -1.3340492, lng: 36.7733636 },
+    { lat: -1.3338954, lng: 36.7730099 },
+    { lat: -1.3337952, lng: 36.7728412 },
+                
+                
+                
+    { lat: -1.3337952, lng: 36.7726595 },
+    { lat: -1.331412, lng: 36.773035 },
+    { lat: -1.3277339, lng: 36.7716149 },
+    { lat: -1.3224889, lng: 36.7695818 },
+    { lat: -1.3221028, lng: 36.7715344 },
+    { lat: -1.3186061, lng: 36.7710731 },
+                
+                { lat: -1.3198503, lng: 36.7697642 },
+    { lat: -1.32088, lng: 36.7684982 }, 
+    { lat: -1.321352, lng: 36.7677042 },
+                
+                { lat: -1.3216952, lng: 36.7668245 },
+    { lat: -1.3218239, lng: 36.7656443 },
+                
+                { lat: -1.3218454, lng: 36.7645499 },
+         { lat: -1.3218336, lng: 36.7638107 },
+                
+                
+      ];
+  const flightPath = new google.maps.Polyline({
+    path: flightPlanCoordinates,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+  });
+
+  flightPath.setMap(map);
+        }
+        
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmtMhy-k6u2MU-Xi7ovKAaSzot8wegYnc&callback=initMap"></script>
+</body>
+</html>
